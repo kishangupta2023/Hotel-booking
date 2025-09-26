@@ -1,7 +1,7 @@
 # 🏨 Hotel Booking - QuickStay
 
 A full-stack **hotel booking platform** built with the **MERN stack** (MongoDB, Express, React, Node.js).  
-QuickStay allows users to browse hotels, register their own hotels, and make bookings seamlessly.  
+QuickStay allows users to browse hotels, register their own hotels, make bookings, and pay securely with **Stripe**.  
 
 🔗 **Live Demo:**  
 Frontend: [hotel-booking-frontend-pi.vercel.app](https://hotel-booking-frontend-pi.vercel.app/)  
@@ -11,12 +11,14 @@ Backend API: [hotel-booking-lac-tau.vercel.app](https://hotel-booking-lac-tau.ve
 
 ## ✨ Features
 
-✅ **User Authentication** – Secure login/signup using Clerk  
-✅ **Browse Hotels** – Explore hotels by city or name  
-✅ **Hotel Registration** – Owners can list their hotels  
-✅ **Booking System** – Users can book available hotels  
-✅ **Responsive UI** – Mobile-first design  
-✅ **Secure API** – Authentication middleware protects routes  
+✅ **User Authentication** – Secure login/signup with Clerk  
+✅ **Hotel Search & Listing** – Browse and filter hotels by city or name  
+✅ **Hotel Registration** – Owners can list their hotels via a simple form  
+✅ **Booking System** – Users can book hotels in real-time  
+✅ **Stripe Payments** – Secure and smooth payment flow  
+✅ **Bravo Integration** – Streamlined API workflows and automation  
+✅ **Responsive Design** – Works perfectly on mobile, tablet, and desktop  
+✅ **Protected API Routes** – Clerk middleware ensures secure data access  
 
 ---
 
@@ -26,13 +28,14 @@ Backend API: [hotel-booking-lac-tau.vercel.app](https://hotel-booking-lac-tau.ve
 - React + Vite  
 - TailwindCSS  
 - Axios  
-- Clerk (for authentication)
+- Clerk (authentication)
 
 **Backend:**  
 - Node.js + Express  
 - MongoDB + Mongoose  
 - Clerk (authentication & authorization)  
-- CORS, dotenv, and other middleware  
+- Stripe (payment processing)  
+- Bravo (API automation/workflows)  
 
 Deployment:  
 - **Frontend:** Vercel  
@@ -45,7 +48,7 @@ Deployment:
 
 ```bash
 Hotel-Booking-QuickStay/
-├── client/         # React frontend
-├── server/         # Express backend
+├── client/         # React frontend (Vite)
+├── server/         # Express backend (API + Stripe + Bravo)
 ├── .gitignore
 └── README.md
