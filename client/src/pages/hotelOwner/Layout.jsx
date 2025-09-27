@@ -19,7 +19,7 @@ const Layout = () => {
             <Navbar />
             <div className='flex flex-1'>
                 <Sidebar />
-                <div className='flex-1 p-4 pt-10 md:px-10'>
+                <div className='flex-1 p-4 pt-10 md:px-10 overflow-auto'>
                     <Outlet />
                 </div>
             </div>
